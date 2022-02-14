@@ -17,6 +17,8 @@ async function start(){
 
     await fillInstances();
 
+    console.log('Hello');
+
     botInstances.forEach((bot) => {
         const apiReceiver:apiHandler = new apiHandler(bot.bot);
         bot.bot.startMainLoop(true);
